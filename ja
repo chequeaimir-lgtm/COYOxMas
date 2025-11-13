@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COYOxMAS - Boleto Oficial</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente 'Permanent Marker' para el estilo Graffiti -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        /* Definición de la fuente Graffiti */
+        .graffiti-font {
+            font-family: 'Permanent Marker', cursive;
+        }
+        /* Fondo simple y oscuro */
+        body {
+            background-color: #1a202c; 
+        }
+        /* Estilo llamativo para el contenedor del boleto */
+        .ticket-container {
+            /* Borde y sombra en color rojo Coyo */
+            border: 8px solid #E53E3E;
+            box-shadow: 0 20px 25px -5px rgba(229, 62, 62, 0.5), 0 10px 10px -5px rgba(229, 62, 62, 0.2);
+            background: linear-gradient(to bottom, #fefefe, #e2e8f0); /* Degradado suave */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coyo-red': '#E53E3E',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <!-- Contenedor Principal simplificado y centrado -->
+    <div class="w-full max-w-xs sm:max-w-sm ticket-container rounded-xl overflow-hidden">
+
+        <!-- Título principal con Estilo Graffiti: "COYOxMAS boleto digital oficial" -->
+        <div class="bg-coyo-red p-4 text-center border-b-4 border-black">
+            <h1 class="graffiti-font text-white text-3xl sm:text-4xl font-bold tracking-wider leading-tight" style="text-shadow: 3px 3px 0px #000, -3px -3px 0px #FEE2E2;">
+                COYOxMAS
+            </h1>
+            <p class="text-sm sm:text-base text-black font-semibold mt-1">Boleto Digital Oficial</p>
+        </div>
+
+        <!-- Imagen del Evento -->
+        <div class="p-4 sm:p-6 text-center">
+
+            <div class="my-4 rounded-lg shadow-xl overflow-hidden border-4 border-gray-300">
+                <!-- 
+                    NOTA DE LA IMAGEN:
+                    Esta es una imagen placeholder. Por favor, sube tu archivo (1000118300.jpg) 
+                    a un host de imágenes y reemplaza la URL 'src' a continuación con la URL pública 
+                    de tu imagen para que sea visible para todos. 
+                -->
+                <img src="IMG_0818.png"
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
